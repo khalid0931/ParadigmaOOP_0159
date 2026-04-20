@@ -13,7 +13,7 @@ public:
         cout << "Jumlah           : " << jumlah << endl;
         cout << "Kategori         : " << kategori << endl;
         cout << "Tanggal Produksi : " << tanggalProduksi << endl;
-        
+    }
 }; // batas class
 
 int main(){
@@ -21,17 +21,18 @@ int main(){
     Barang nonelektro;
 
     // Mengisi data barang elektronik
-    elektro.nama = "Laptop Lenovo";
+    elektro.nama = " HP Samsung S25";
     elektro.jumlah = 15;
     elektro.kategori = "Elektronik";
     elektro.tanggalProduksi = "2025-01-15";
 
     // Mengisi data barang non-elektronik
-    nonelektro.nama = "Meja Kayu ";
+    nonelektro.nama = "Mebel Kayu";
     nonelektro.jumlah = 8;
     nonelektro.kategori = "Non-Elektronik";
     nonelektro.tanggalProduksi = "2024-11-20";
 
-    mhs.printData();
+    elektro.tampilkanSpesifikasi();
+    nonelektro.tampilkanSpesifikasi();
 
 }
